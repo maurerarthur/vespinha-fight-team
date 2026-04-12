@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
@@ -21,25 +24,13 @@
       <img src="https://i.imgur.com/lL8CpUE.jpeg" class="h-30 w-auto" />
       <div class="flex gap-15">
         <a class="text-xl" href="#">Home</a>
-        <a class="text-xl" href="#">Galeria</a>
         <a class="text-xl" href="#contato">Contato</a>
+        <a class="text-xl" href="#galeria">Galeria</a>
         <a class="text-xl" href="#endereco">Endereço</a>
       </div>
     </header>
 
-    <div id="contato" class="flex flex-col-reverse gap-5 p-5 bg-white md:grid grid-cols-2">
-      <a class="flex justify-center items-center gap-2 bg-stone-200 h-25 rounded-lg" href="#endereco">
-        <i class="fa-solid fa-location-dot text-3xl text-red-500"></i>
-        <p class="text-xl text-center">
-          Guilherme Brandalise - Universitário, Videira - SC
-        </p>
-      </a>
-      <a class="flex justify-center items-center gap-2 bg-stone-200 h-25 rounded-lg" href="#" target="_blank">
-        <i class="fa-brands fa-facebook text-3xl text-blue-500"></i>
-        <p class="text-xl">
-          Facebook
-        </p>
-      </a>
+    <div id="contato" class="flex flex-col gap-5 p-5 bg-white md:grid grid-cols-3">
       <a class="flex justify-center items-center gap-2 bg-stone-200 h-25 rounded-lg" href="https://www.instagram.com/vespinhafightteam/" target="_blank">
         <i class="fa-brands fa-instagram text-3xl text-pink-500"></i>
         <p class="text-xl">
@@ -52,6 +43,86 @@
           WhatsApp
         </p>
       </a>
+      <a class="flex justify-center items-center gap-2 bg-stone-200 h-25 rounded-lg" href="#endereco">
+        <i class="fa-solid fa-location-dot text-3xl text-red-500"></i>
+        <p class="text-xl text-center">
+          Guilherme Brandalise - Universitário, Videira - SC
+        </p>
+      </a>
+    </div>
+
+    <div id="galeria" class="w-full mt-10 mb-10">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="flex justify-center items-center h-full">
+              <img src="https://i.imgur.com/nfLc18D.jpeg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-center items-center h-full">
+              <img src="https://i.imgur.com/FaQ4L8o.jpeg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-center items-center h-full">
+              <img src="https://i.imgur.com/5ORY3MH.jpeg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-center items-center h-full">
+              <img src="https://i.imgur.com/f7UNr7S.jpeg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/v3EX78T.jpeg')]">
+              <div class="absolute inset-0 backdrop-blur-sm"></div>
+              <img src="https://i.imgur.com/v3EX78T.jpeg" class="relative h-full z-10" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/kFB6sky.jpeg')]">
+              <div class="absolute inset-0 backdrop-blur-sm"></div>
+              <img src="https://i.imgur.com/kFB6sky.jpeg" class="relative h-full z-10" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/M8R5ONN.jpeg')]">
+              <div class="absolute inset-0 backdrop-blur-sm"></div>
+              <img src="https://i.imgur.com/M8R5ONN.jpeg" class="relative h-full z-10" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-center items-center h-full">
+              <img src="https://i.imgur.com/4CGhHcH.jpeg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-center items-center h-full">
+              <img src="https://i.imgur.com/ja5834h.jpeg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex justify-center items-center h-full">
+              <img src="https://i.imgur.com/a7vUgBQ.jpeg" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/6FtM3AN.jpeg')]">
+              <div class="absolute inset-0 backdrop-blur-sm"></div>
+              <img src="https://i.imgur.com/6FtM3AN.jpeg" class="relative h-full z-10" />
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/OKImv1i.jpeg')]">
+              <div class="absolute inset-0 backdrop-blur-sm"></div>
+              <img src="https://i.imgur.com/OKImv1i.jpeg" class="relative h-full z-10" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </div>
 
     <div id="endereco" class="w-full">
@@ -63,5 +134,21 @@
     * {
       font-family: "Roboto Condensed", sans-serif;
     }
+
+    .swiper {
+      width: 100%;
+      height: 500px;
+    }
   </style>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      }
+    });
+  </script>
 </html>
