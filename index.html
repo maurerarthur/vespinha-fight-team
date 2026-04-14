@@ -22,12 +22,26 @@
   <body>
     <header class="top-0 flex justify-between items-center p-5 bg-white z-100">
       <img src="https://i.imgur.com/lL8CpUE.jpeg" class="h-30 w-auto" />
-      <div class="flex gap-15">
+      <div class="hidden sm:flex gap-15">
         <a class="text-xl" href="#contato">Contato</a>
         <a class="text-xl" href="#galeria">Galeria</a>
         <a class="text-xl" href="#endereco">Endereço</a>
       </div>
+      <button class="bg-transparent border-none outline-none cursor-pointer sm:hidden" onclick="showMenu()">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
     </header>
+
+    <div id="responsive-menu" class="hidden fixed top-0 h-full w-full z-1000 bg-gray-500/50 flex justify-end">
+      <div class="bg-white w-2/4 flex flex-col items-end gap-5 p-10">
+        <button class="bg-transparent border-none outline-none cursor-pointer" onclick="hideMenu()">
+          <i class="fa-solid fa-xmark text-2xl"></i>
+        </button>
+        <a class="text-xl" href="#contato" onclick="hideMenu()">Contato</a>
+        <a class="text-xl" href="#galeria" onclick="hideMenu()">Galeria</a>
+        <a class="text-xl" href="#endereco" onclick="hideMenu()">Endereço</a>
+      </div>
+    </div>
 
     <div id="contato" class="flex flex-col gap-5 p-5 bg-white md:grid grid-cols-3">
       <a class="flex justify-center items-center gap-2 bg-stone-200 h-25 rounded-lg" href="https://www.instagram.com/vespinhafightteam/" target="_blank">
@@ -426,5 +440,13 @@
         prevEl: '.swiper-button-prev'
       }
     });
+
+    function showMenu() {
+      document.getElementById('responsive-menu').classList.remove('hidden')
+    }
+
+    function hideMenu() {
+      document.getElementById('responsive-menu').classList.add('hidden')
+    }
   </script>
 </html>
