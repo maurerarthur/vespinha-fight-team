@@ -25,6 +25,7 @@
       <div class="hidden sm:flex gap-15">
         <a class="text-xl" href="#contato">Contato</a>
         <a class="text-xl" href="#galeria">Galeria</a>
+        <a class="text-xl" href="#faixas-pretas">Faixas Pretas</a>
         <a class="text-xl" href="#endereco">Endereço</a>
       </div>
       <button class="bg-transparent border-none outline-none cursor-pointer sm:hidden" onclick="showMenu()">
@@ -39,6 +40,7 @@
         </button>
         <a class="text-xl" href="#contato" onclick="hideMenu()">Contato</a>
         <a class="text-xl" href="#galeria" onclick="hideMenu()">Galeria</a>
+        <a class="text-xl" href="#faixas-pretas" onclick="hideMenu()">Faixas Pretas</a>
         <a class="text-xl" href="#endereco" onclick="hideMenu()">Endereço</a>
       </div>
     </div>
@@ -67,6 +69,12 @@
     <div id="galeria" class="w-full mt-10 mb-10">
       <div class="swiper">
         <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/gGk0cAp.jpeg')]">
+              <div class="absolute inset-0 backdrop-blur-sm"></div>
+              <img src="https://i.imgur.com/gGk0cAp.jpeg" class="relative h-full z-10" />
+            </div>
+          </div>
           <div class="swiper-slide">
             <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/nfLc18D.jpeg')]">
               <div class="absolute inset-0 backdrop-blur-sm"></div>
@@ -407,6 +415,33 @@
             <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/iP3J2yU.jpeg')]">
               <div class="absolute inset-0 backdrop-blur-sm"></div>
               <img src="https://i.imgur.com/iP3J2yU.jpeg" class="relative h-full z-10" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </div>
+
+    <div id="faixas-pretas" class="w-full mt-10 mb-10">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/pzJVPXS.jpeg')]">
+              <div class="absolute inset-0 backdrop-blur-sm"></div>
+              <img src="https://i.imgur.com/pzJVPXS.jpeg" class="relative h-full z-10" />
+              <p class="absolute z-20 bottom-10 text-white text-2xl">
+                Mestre Carlos Vespinha 3 Grau
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/9igu1QC.jpeg')]">
+              <div class="absolute inset-0 backdrop-blur-sm"></div>
+              <img src="https://i.imgur.com/9igu1QC.jpeg" class="relative h-full z-10" />
+              <p class="absolute z-20 bottom-10 text-white text-2xl">
+                Leo
+              </p>
             </div>
           </div>
         </div>
