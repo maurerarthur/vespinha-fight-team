@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" class="h-full overflow-visible scroll-smooth">
+<html lang="pt-BR" class="scroll-smooth">
   <head>
     <title>Vespinha Fight Team</title>
 
@@ -19,17 +19,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
 
-  <body>
+  <body class="bg-gray-100 text-gray-800">
     <header class="top-0 flex justify-between items-center p-5 bg-white z-100">
       <img src="https://i.imgur.com/lL8CpUE.jpeg" class="h-30 w-auto" />
-      <div class="hidden sm:flex gap-15">
+      <nav class="hidden md:flex gap-15">
         <a class="text-xl" href="#contato">Contato</a>
+        <a class="text-xl" href="#horarios">Horários</a>
         <a class="text-xl" href="#galeria">Galeria</a>
-        <a class="text-xl" href="#faixas-pretas">Faixas Pretas</a>
-        <a class="text-xl" href="#guilherme-canibal">Guilherme Canibal</a>
         <a class="text-xl" href="#endereco">Endereço</a>
-      </div>
-      <button class="bg-transparent border-none outline-none cursor-pointer sm:hidden" onclick="showMenu()">
+      </nav>
+      <button class="bg-transparent border-none outline-none cursor-pointer md:hidden" onclick="showMenu()">
         <i class="fa-solid fa-bars text-2xl"></i>
       </button>
     </header>
@@ -40,35 +39,91 @@
           <i class="fa-solid fa-xmark text-2xl"></i>
         </button>
         <a class="text-xl" href="#contato" onclick="hideMenu()">Contato</a>
+        <a class="text-xl" href="#horarios" onclick="hideMenu()">Horários</a>
         <a class="text-xl" href="#galeria" onclick="hideMenu()">Galeria</a>
-        <a class="text-xl" href="#faixas-pretas" onclick="hideMenu()">Faixas Pretas</a>
-        <a class="text-xl" href="#guilherme-canibal" onclick="hideMenu()">Guilherme Canibal</a>
         <a class="text-xl" href="#endereco" onclick="hideMenu()">Endereço</a>
       </div>
     </div>
 
-    <div id="contato" class="flex flex-col gap-5 p-5 bg-white md:grid grid-cols-3">
-      <a class="flex justify-center items-center gap-2 bg-stone-200 h-25 rounded-lg" href="https://www.instagram.com/vespinhafightteam/" target="_blank">
-        <i class="fa-brands fa-instagram text-3xl text-pink-500"></i>
-        <p class="text-xl">
-          Instagram
-        </p>
-      </a>
-      <a class="flex justify-center items-center gap-2 bg-stone-200 h-25 rounded-lg" href="https://wa.me/554999771158" target="_blank">
-        <i class="fa-brands fa-whatsapp text-3xl text-green-500"></i>
-        <p class="text-xl">
-          WhatsApp
-        </p>
-      </a>
-      <a class="flex justify-center items-center gap-2 bg-stone-200 h-25 rounded-lg" href="#endereco">
-        <i class="fa-solid fa-location-dot text-3xl text-red-500"></i>
-        <p class="text-xl text-center">
-          Guilherme Brandalise - Universitário, Videira - SC
-        </p>
-      </a>
-    </div>
+    <section id="contato" class="py-16 text-center">
+      <h2 class="text-3xl font-semibold text-slate-800 mb-8">
+        <i class="fa-solid fa-phone"></i>
+        Contato
+      </h2>
 
-    <div id="galeria" class="w-full mt-10 mb-10">
+      <div class="space-x-4">
+        <a href="https://www.instagram.com/vespinhafightteam/" target="_blank" class="inline-block bg-pink-600 text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
+          <i class="fab fa-instagram"></i>
+          Instagram
+        </a>
+
+        <a href="https://wa.me/554999771158" target="_blank" class="inline-block bg-green-500 text-white px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
+          <i class="fab fa-whatsapp"></i>
+          WhatsApp
+        </a>
+      </div>
+
+      <div class="flex justify-center items-center gap-5 mt-6 text-lg">
+        <i class="fa-solid fa-location-dot"></i>
+        <p class="text-xl">Guilherme Brandalise - Universitário, Videira - SC</p>
+      </div>
+    </section>
+
+    <section id="horarios" class="py-16 text-center">
+      <h2 class="text-3xl font-semibold text-slate-800 mb-8">
+        <i class="fa-solid fa-clock"></i>
+        Horários das Aulas
+      </h2>
+      <div class="overflow-x-auto">
+        <table class="mx-auto bg-white rounded-xl shadow-lg overflow-hidden min-w-[300px]">
+          <thead class="bg-slate-800 text-white">
+            <tr>
+              <th class="p-4">Dia</th>
+              <th class="p-4">Horário</th>
+              <th class="p-4">Turma</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b hover:bg-gray-50">
+              <td class="p-4">Segunda | Quarta | Sexta</td>
+              <td class="p-4">06:00 - 07:00</td>
+              <td class="p-4">Adulto</td>
+            </tr>
+            <tr class="border-b hover:bg-gray-50">
+              <td class="p-4">Segunda | Quarta | Sexta</td>
+              <td class="p-4">18:30 - 19:30</td>
+              <td class="p-4">Kids</td>
+            </tr>
+            <tr class="border-b hover:bg-gray-50">
+              <td class="p-4">Segunda | Quarta | Sexta</td>
+              <td class="p-4">19:30 - 20:30</td>
+              <td class="p-4">Juvenil</td>
+            </tr>
+            <tr class="border-b hover:bg-gray-50">
+              <td class="p-4">Segunda | Quarta | Sexta</td>
+              <td class="p-4">20:30 - 22:00</td>
+              <td class="p-4">Adulto</td>
+            </tr>
+            <tr class="border-b hover:bg-gray-50">
+              <td class="p-4">Terça | Quinta</td>
+              <td class="p-4">12:10 - 13:10</td>
+              <td class="p-4">Competição</td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="p-4">Quinta</td>
+              <td class="p-4">20:30 - 22:00</td>
+              <td class="p-4">Feminino</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="galeria" class="py-16 text-center">
+      <h2 class="text-3xl font-semibold text-slate-800 mb-8">
+        <i class="fa-solid fa-images"></i>
+        Galeria
+      </h2>
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -423,9 +478,9 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </div>
-
-    <div id="faixas-pretas" class="w-full mt-10 mb-10">
+      <p class="text-2xl font-semibold text-slate-800 mt-8 mb-8">
+        Nossos Faixas Pretas
+      </p>
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
@@ -477,26 +532,34 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </div>
-
-    <div id="guilherme-canibal" class="w-full mt-10 mb-10">
+      <p class="text-2xl font-semibold text-slate-800 mt-8 mb-8">
+        Guilherme Canibal
+      </p>
       <div class="swiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="relative flex justify-center items-center h-full bg-center bg-[url('https://i.imgur.com/f0WGZMY.jpeg')]">
               <div class="absolute inset-0 backdrop-blur-sm"></div>
-              <img src="https://i.imgur.com/f0WGZMY.jpeg" class="relative h-full z-10" />
+              <img src="https://i.imgur.com/f0WGZMY.jpeg" class="relative w-full z-10" />
             </div>
           </div>
         </div>
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
-    </div>
+    </section>
 
-    <div id="endereco" class="w-full">
+    <section id="endereco" class="py-16 text-center">
+      <h2 class="text-3xl font-semibold text-slate-800 mb-8">
+        <i class="fa-solid fa-map-location-dot"></i>
+        Endereço
+      </h2>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23914.900772923913!2d-51.17891022431719!3d-26.99945860342283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e14f6da8b99551%3A0x9060d2fc444dce33!2sVespinha%20Fight%20Team%20jiu-j%C3%ADtsu!5e0!3m2!1spt-BR!2sbr!4v1775005233950!5m2!1spt-BR!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+    </section>
+
+    <footer class="bg-black text-white text-center p-4">
+      <p>&copy; 2026 Vespinha Fight Team</p>
+    </footer>
   </body>
 
   <style>
